@@ -1,0 +1,4 @@
+Title: Flatmates Bill
+Description: An app that gets an amount as a bill for a
+Objects:
+Look for nouns in the Description
