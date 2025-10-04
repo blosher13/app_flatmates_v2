@@ -13,9 +13,24 @@
   <body>
     <h1>Bill Page</h1>
     <a href={{url_for('home_page')}}>Home Page</a>
-    <form>
-      <label> Bill Amount: </label>
-      <input type='text'/>
+
+    <h2>FlatMates Info</h2>
+    <form action='/results' method="post">
+      {{billform.amount.label}}{{billform.amount}}
+      <br>
+      {{billform.period.label}}{{billform.period}}
+      <hr>
+      {{billform.f1_name.label}}{{billform.f1_name}}
+      <br>
+      {{billform.f1_days.label}}{{billform.f1_days}}
+      <hr>
+      {{billform.f2_name.label}}{{billform.f2_name}}
+      <br>
+      {{billform.f2_days.label}}{{billform.f2_days}}
+      <br>
+      {{billform.submit_button}}
+
+      
     </form>
     <script src="" async defer></script>
   </body>
