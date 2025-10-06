@@ -5,14 +5,20 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>FlatMates</title>
+    <title>Results</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="static/main.css" />
   </head>
   <body>
-    <h1>FlatMates homepage</h1>
-    <a href={{url_for('bill_page')}}>Enter New Bill</a>
+    <h1>Results page</h1>
+    <a href={{url_for('bill_page')}}>Enter new bill </a>
+    <br>
+    <h3>Total rent was ${{the_bill}}</h3>
+    <br>
+    <h3>{{f1.name}} stayed for {{f1.days_in_house}} days and pays: ${{f1_pay}}</h3>
+    <br>
+    <h3>{{f2.name}} stayed for {{f2.days_in_house}} days and pays: ${{f2_pay}}</h3>
 
     <script src="" async defer></script>
   </body>
